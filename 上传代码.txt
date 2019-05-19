@@ -1,6 +1,14 @@
+
+//上传代码
 git add .
 git commit -m 'test index'
 git push
 
-
+//公网连接
 https://yiferhe.github.io/post2.html
+
+//个人仓库
+https://github.com/YiferHe/YiferHe.github.io
+
+//克隆代码
+git clone https://github.com/YiferHe/YiferHe.github.io.git
