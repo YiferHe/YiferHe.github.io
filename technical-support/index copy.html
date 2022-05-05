@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>主页面</title>
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="description" content="Mega Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+      <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+      <meta name="author" content="codedthemes" />
+      <!-- Favicon icon -->
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+      <!-- Required Fremwork -->
+      <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+      <!-- themify icon -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" type="text/css" href="assets/icon/font-awesome/css/font-awesome.min.css">
+      <!-- scrollbar.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+        <!-- am chart export.css -->
+        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+      <!-- Style.css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+            <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/icofont/css/icofont.css">
+    <!-- morris chart -->
+    <link rel="stylesheet" type="text/css" href="assets/css/morris.js/css/morris.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.2/dist/echarts.min.js"></script>
+  </head>
+
+  <body>
+  <div id="pcoded" class="pcoded">
+     
+      <div class="pcoded-container navbar-wrapper">
+                      <!-- Page-header start -->
+                      <div class="page-header">
+                          <div class="page-block">
+                              <div class="row align-items-center">
+                                  <div class="col-md-8">
+                                      <div class="page-header-title">
+                                          <h5 class="m-b-10">成果展示</h5>
+                                          <!-- <p class="m-b-0">Welcome to Mega Able</p> -->
+                                      </div>
+                                  </div>
+                                  <!-- <div class="col-md-4">
+                                      <ul class="breadcrumb-title">
+                                          <li class="breadcrumb-item">
+                                              <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                          </li>
+                                          <li class="breadcrumb-item"><a href="#!"></a>
+                                          </li>
+                                      </ul>
+                                  </div> -->
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Page-header end -->
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <!-- SITE VISIT CHART start -->
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="card">
+                                                    <!-- <div class="card-header">
+                                                        <h5>年度目标完成情况</h5>
+                                                        <span>灰色为目标完成数量，蓝色为实际完成数量</span>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div id="morris-site-visit"></div>
+                                                    </div> -->
+                                                    <div id="main" style="height:400px;"></div>
+                                                </div>
+                                            </div>
+                                            <!-- SITE VISIT CHART Ends -->
+                                        </div>
+                                        <div class="row">
+                                            <!-- Donut chart start -->
+                                            <div class="col-md-12 col-lg-12">
+                                                <div class="card">
+                                                    <!-- <div class="card-header">
+                                                        <h5>Donut Chart</h5>
+                                                        <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div id="donut-example"></div>
+                                                    </div> -->
+                                                    <div id="main1" style="height:400px;"></div>
+                                                </div>
+                                            </div>
+                                            <!-- Donut chart Ends -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="styleSelector">
+
+                            </div>
+                        </div>
+
+        </div>
+    </div>
+    
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
+    <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="assets/pages/widget/excanvas.js "></script>
+    <!-- waves js -->
+    <script src="assets/pages/waves/js/waves.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js "></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="assets/js/modernizr/modernizr.js "></script>
+    <!-- slimscroll js -->
+    <script type="text/javascript" src="assets/js/SmoothScroll.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
+    <!-- Chart js -->
+    <script type="text/javascript" src="assets/js/chart.js/Chart.js"></script>
+    <!-- amchart js -->
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="assets/pages/widget/amchart/gauge.js"></script>
+    <script src="assets/pages/widget/amchart/serial.js"></script>
+    <script src="assets/pages/widget/amchart/light.js"></script>
+    <script src="assets/pages/widget/amchart/pie.min.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <!-- menu js -->
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/vertical-layout.min.js "></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/pages/dashboard/custom-dashboard.js"></script>
+    <script type="text/javascript" src="assets/js/script.js "></script>
+
+    
+<!-- Morris Chart js -->
+<script src="assets/js/raphael/raphael.min.js"></script>
+<script src="assets/js/morris.js/morris.js"></script>
+<!-- Custom js -->
+<script src="assets/js/morris-custom-chart.js"></script>
+
+<script>
+
+var chartDom = document.getElementById('main');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+  title: {
+    text: '历史目标完成情况'
+  },
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {},
+  toolbox: {
+    show: true,
+    feature: {
+      dataZoom: {
+        yAxisIndex: 'none'
+      },
+      dataView: { readOnly: false },
+      magicType: { type: ['line', 'bar'] },
+      restore: {},
+      saveAsImage: {}
+    }
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['1m', '2m', '3m', '4m', '5m', '6m', '7m']
+  },
+  yAxis: {
+    type: 'value',
+    axisLabel: {
+      formatter: '{value} '
+    }
+  },
+  series: [
+    {
+      name: '实际完成',
+      type: 'line',
+      data: [10, 11, 13, 11, 12, 12, 9],
+      markPoint: {
+        data: [
+          { type: 'max', name: 'Max' },
+          { type: 'min', name: 'Min' }
+        ]
+      }
+    },
+    {
+      name: '目标完成',
+      type: 'line',
+      data: [10, 9, 12, 11, 12, 10, 10]
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+</script>
+<script>
+var chartDom = document.getElementById('main1');
+var myChart = echarts.init(chartDom);
+var option;
+
+option = {
+    title: {
+    text: '当前目标完成情况'
+  },
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    top: '5%',
+    left: 'center'
+  },
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: ['40%', '70%'],
+      avoidLabelOverlap: false,
+      label: {
+        show: false,
+        position: 'center'
+      },
+      emphasis: {
+        label: {
+          show: true,
+          fontSize: '40',
+          fontWeight: 'bold'
+        }
+      },
+      labelLine: {
+        show: false
+      },
+      data: [
+        { value: 7, name: '已完成数量' },
+        { value: 5, name: '未完成数量' }
+      ]
+    }
+  ]
+};
+
+option && myChart.setOption(option);
+</script>
+</body>
+
+</html>
