@@ -52,7 +52,7 @@
                               <div class="row align-items-center">
                                   <div class="col-md-8">
                                       <div class="page-header-title">
-                                          <h5 class="m-b-10">客户信息展示</h5>
+                                          <h5 class="m-b-10">产品</h5>
                                           <!-- <p class="m-b-0">Welcome to Mega Able</p> -->
                                       </div>
                                   </div>
@@ -65,122 +65,68 @@
                              <!-- Basic table card start -->
                              <div class="card">
                               <div class="card-header">
-                                <h5>客户A信息</h5>
-                                
-                            </div>
-                            <div class="card-block">
-                                <form>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">客户名称</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control form-control-normal"
-                                            placeholder="浙江大学">
-                                        </div>
+                                <!-- <h5>Basic Table</h5>
+                                <span>use class <code>table</code> inside table element</span> -->
+                                <form class="form-material">
+                                    <div class="form-group form-primary">
+                                        <input type="text" name="footer-email" class="form-control" required="">
+                                        <span class="form-bar"></span>
+                                        <label class="float-label"><i class="fa fa-search m-r-10"></i>搜索文件名</label>
+                                        <a href="data-search.html" class="btn btn-primary" style="color: aliceblue;">搜索</a>
                                     </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">客户单位名称</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control form-control-normal"
-                                            placeholder="浙江大学">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">地址</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control form-control-normal"
-                                            placeholder=" 杭州市西湖区余杭塘路866号">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">联系人</label>
-                                        <div class="col-sm-10">
-                                            <input type="text"
-                                            class="form-control form-control-capitalize"
-                                            placeholder="张三">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">电话</label>
-                                        <div class="col-sm-10">
-                                            <input type="text"
-                                            class="form-control form-control-uppercase"
-                                            placeholder="1234567">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">邮箱</label>
-                                        <div class="col-sm-10">
-                                            <input type="text"
-                                            class="form-control form-control-lowercase"
-                                            placeholder="123@qq.com">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">职位（科室）</label>
-                                        <div class="col-sm-10">
-                                            <input type="text" class="form-control form-control-variant"
-                                            placeholder="教授">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                      <label class="col-sm-2 col-form-label">客户背景</label>
-                                      <div class="col-sm-10">
-                                          <textarea rows="5" cols="5" class="form-control"
-                                          placeholder="研究内容（疾病）/研发管线、文章、职位、经费、团队规模、重点实验室、技术结合点、接触过（机器测样等）"></textarea>
-                                      </div>
-                                    </div>
-                                    <div class="form-group row">
-                                      <label class="col-sm-2 col-form-label">客户类别</label>
-                                      <div class="col-sm-10">
-                                          <select class="form-control">
-                                            <option value="volvo">一类</option>
-                                            <option value="saab">二类</option>
-                                            <option value="mercedes">三类</option>
-                                          </select>
-                                      </div>
-                                    </div>
-                                    <div class="form-group row">
-                                      <label class="col-sm-2 col-form-label">客户属性</label>
-                                      <div class="col-sm-10">
-                                        <select class="form-control">
-                                          <option value="volvo">科研</option>
-                                          <option value="saab">临床</option>
-                                          <option value="mercedes">工业制药</option>
-                                          <option value="mercedes">其他</option>
-                                        </select>
-                                      </div>
-                                    </div>
-                                    <div class="form-group row">
-                                      <label class="col-sm-2 col-form-label">设备型号</label>
-                                      <div class="col-sm-10">
-                                          <input type="text" class="form-control form-control-variant"
-                                          placeholder="">
-                                      </div>
-                                    </div>
-                                    <div class="form-group row">
-                                      <label class="col-sm-2 col-form-label">设备数量</label>
-                                      <div class="col-sm-10">
-                                          <input type="text" class="form-control form-control-variant"
-                                          placeholder="">
-                                      </div>
-                                    </div>
-                                    <div class="form-group row">
-                                      <label class="col-sm-2 col-form-label">试剂耗材消耗情况清单</label>
-                                      <div class="col-sm-10">
-                                          <input type="text" class="form-control form-control-variant"
-                                          placeholder="">
-                                      </div>
-                                    </div>
-            
-                                    
                                 </form>
-                                
+                                <div class="card-header-right">
+                                    <ul class="list-unstyled card-option">
+                                        <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                        <li><i class="fa fa-window-maximize full-card"></i></li>
+                                        <li><i class="fa fa-minus minimize-card"></i></li>
+                                        <li><i class="fa fa-refresh reload-card"></i></li>
+                                        <li><i class="fa fa-trash close-card"></i></li>
+                                    </ul>
+                                </div>
                             </div>
-                            
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>序号</th>
+                                                <th>文件</th>
+                                                <th>时间</th>
+                                                <th>操作</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <i class="ti-folder" style="color: orange; background-color: yellow; font-size: 16px;"></i> 
+                                                    <a href="data-folder.html"><u>Open SPR</u></a>
+                                                </td>
+                                                <td>2022/04/01 13:00</td>
+                                                <td>
+                                                    <a href="data-folder.html"><i class="ti-book" title="打开"></i></a>
+                                                </td>     
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>
+                                                    <i class="ti-folder" style="color: orange; background-color: yellow; font-size: 16px;"></i> 
+                                                    <a href="data-folder.html"><u>NeoLab</u></a>
+                                                </td>
+                                                <td>2022/04/01 13:00</td>
+                                                <td>
+                                                    <a href="data-folder.html"><i class="ti-book" title="打开"></i></a>
+                                                </td>     
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            <div style="padding-left: 1000px;">
-                              <a href="allinfo.html"><input type="submit" class="btn btn-primary waves-effect waves-light" value='提交'></a>
-                          </div>
+                            </div>
+                              
                                              
                           </div>
                           <!-- Basic table card end -->
