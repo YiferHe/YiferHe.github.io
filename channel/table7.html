@@ -40,6 +40,16 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
     <script src="https://cdn.staticfile.org/echarts/5.3.2/echarts.min.js"></script>
+    <style>
+      .run_progress {
+        width: 100px; 
+        height: 18px; 
+        border: 1px solid rgb(121, 217, 112);
+        border-radius: 10px; 
+        text-align: center; 
+        line-height: 18px;
+    }
+    </style>  
   </head>
 
   <body>
@@ -52,7 +62,7 @@
                               <div class="row align-items-center">
                                   <div class="col-md-8">
                                       <div class="page-header-title">
-                                          <h5 class="m-b-10">讲座</h5>
+                                          <h5 class="m-b-10">代理商评价</h5>
                                           <!-- <p class="m-b-0">Welcome to Mega Able</p> -->
                                       </div>
                                   </div>
@@ -67,7 +77,22 @@
                               <div class="card-header">
                                 <!-- <h5>Basic Table</h5>
                                 <span>use class <code>table</code> inside table element</span> -->
-                                <a href="revise.html"><i class="ti-plus">添加</i></a>
+                                <!-- <a href="revise.html"><i class="ti-plus">添加</i></a> -->
+                                <form action="" style="float: right; margin-right:200px">
+                                  <input type="text" list="mylist">
+                                  <datalist id="mylist">
+                                      <option value="代理商A"></option>
+                                      <option value="代理商B"></option>
+                                      <option value="代理商C"></option>
+                                      <option value="代理商D"></option>
+                                  </datalist>
+                                  <input type="submit" value="搜索代理商">
+                              </form>
+                                
+                                
+                                      
+                              
+                                
                                 <div class="card-header-right">
                                     <ul class="list-unstyled card-option">
                                         <li><i class="fa fa fa-wrench open-card-option"></i></li>
@@ -84,97 +109,43 @@
                                         <thead>
                                             <tr>
                                                 <th>序号</th>
-                                                <th>客户信息</th>
-                                                <th>讲座材料</th>
-                                                <th>渠道名称</th>
-                                                <th>讲座时间</th>
-                                                <th>参与人数</th>
-                                                <th>人员结构</th>
-                                                <th>预计产出</th>
-                                                <th>状态</th>
-                                                <th>讲座反馈</th>
-                                                <th>操作</th>
+                                                <th>代理商名称</th>
+                                                
+                                                <th>业绩跟踪评分</th>
+                                                <th>渠道服务评分</th>
+                                                <th>市场活动评分</th>
+                                                <th>评价</th>
+                                                
                                                 
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td ><a href="info.html" style="color:#448aff">客户A</a></td>
-                                                <td>宣传海报.jpg</td>
-                                                <td>代理商A</td>
-                                                <td>2022/05/01 13:00</td>
-                                                <td>100人</td>
-                                                <td>生物系大学老师、同学</td>
-                                                <td>仪器租赁</td>
-                                                <td>准备中</td>
-                                                <td>
-                                                    <a href="revise.html"><i class="ti-pencil-alt" title="修改"></i></a>
-                                                    <a href=""><i class="ti-trash" title="删除"></i></a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td ><a href="info.html" style="color:#448aff">客户A</a></td>
-                                                <td>宣传海报.jpg</td>
-                                                <td>代理商B</td>
-                                                <td>2022/05/01 13:00</td>
-                                                <td>100人</td>
-                                                <td>生物系大学老师、同学</td>
-                                                <td>仪器租赁</td>
-                                                <td>讲座中</td>
-                                                <td>
-                                                    <a href="revise.html"><i class="ti-pencil-alt" title="修改"></i></a>
-                                                    <a href=""><i class="ti-trash" title="删除"></i></a>
-                                                </td>
+                                                <td >代理商A</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                                <td>3</td>  
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">3</th>
-                                                <td ><a href="info.html" style="color:#448aff">客户A</a></td>
-                                                <td>宣传海报.jpg</td>
-                                                <td>代理商C</td>
-                                                <td>2022/05/01 13:00</td>
-                                                <td>100人</td>
-                                                <td>生物系大学老师、同学</td>
-                                                <td>仪器租赁</td>
-                                                <td style="color: rgb(52, 194, 52);">已完成</td>
-                                                <td>
-                                                    <a href="revise.html"><i class="ti-pencil-alt" title="修改"></i></a>
-                                                    <a href=""><i class="ti-trash" title="删除"></i></a>
-                                                </td>
+                                              <th scope="row">2</th>
+                                              <td >代理商B</td>
+                                              <td>3</td>
+                                              <td>3</td>
+                                              <td>3</td> 
+                                              <td></td> 
                                             </tr>
                                             <tr>
-                                                <th scope="row">4</th>
-                                                <td ><a href="info.html" style="color:#448aff">客户A</a></td>
-                                                <td>宣传海报.jpg</td>
-                                                <td>代理商D</td>
-                                                <td>2022/05/01 13:00</td>
-                                                <td>100人</td>
-                                                <td>生物系大学老师、同学</td>
-                                                <td>仪器租赁</td>
-                                                <td>讲座中</td>
-                                                <td>
-                                                    <a href="revise.html"><i class="ti-pencil-alt" title="修改"></i></a>
-                                                    <a href=""><i class="ti-trash" title="删除"></i></a>
-                                                </td>
+                                              <th scope="row">3</th>
+                                              <td >代理商C</td>
+                                              <td></td>
+                                              <td></td>
+                                              <td></td>  
+                                              <td><a href="revise6.html"><butten class="btn waves-effect waves-light btn-info">评价</butten></a></i></td>
                                             </tr>
-                                            <tr>
-                                                <th scope="row">5</th>
-                                                <td ><a href="info.html" style="color:#448aff">客户A</a></td>
-                                                <td>宣传海报.jpg</td>
-                                                <td>代理商E</td>
-                                                <td>2022/05/01 13:00</td>
-                                                <td>100人</td>
-                                                <td>生物系大学老师、同学</td>
-                                                <td>仪器租赁</td>
-                                                <td style="color: rgb(52, 194, 52);">已完成</td>
-                                                <td>反馈有...问题</td>
-                                                <td>
-                                                    <a href="revise.html"><i class="ti-pencil-alt" title="修改"></i></a>
-                                                    <a href=""><i class="ti-trash" title="删除"></i></a>
-                                                </td>
-                                            </tr>
+                                          
+                                          
                                         </tbody>
                                     </table>
                                 </div>
