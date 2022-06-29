@@ -75,32 +75,7 @@
                                 <div class="page-wrapper">
                                     <div class="page-body">
                                         <div class="row">
-                                          <div class="col-xl-3 col-md-6">
-                                            <div class="card">
-                                                <div class="card-block">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-8">
-                                                            <h4 class="text-c-purple">5个+</h4>
-                                                            <h6 class="text-muted m-b-0">稳定发展代理</h6>
-                                                        </div>
-                                                        <div class="col-4 text-right">
-                                                            <!-- <i class="fa fa-bar-chart f-28"></i> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card-footer bg-c-purple">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-9">
-                                                            <p class="text-white m-b-0">年度目标</p>
-                                                        </div>
-                                                        <div class="col-3 text-right">
-                                                            <i class="fa fa-line-chart text-white f-16"></i>
-                                                        </div>
-                                                    </div>
-        
-                                                </div>
-                                            </div>
-                                        </div>
+                                          
                                         <div class="col-xl-3 col-md-6">
                                             <div class="card">
                                                 <div class="card-block">
@@ -182,19 +157,7 @@
                                         </div>
                                         <div class="row">
                                             <!-- Donut chart start -->
-                                            <div class="col-md-12 col-lg-3">
-                                                <div class="card">
-                                                    <!-- <div class="card-header">
-                                                        <h5>Donut Chart</h5>
-                                                        <span>lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-                                                    </div>
-                                                    <div class="card-block">
-                                                        <div id="donut-example"></div>
-                                                    </div> -->
-                                                    <div id="main1" style="height:400px;"></div>
-                                                    
-                                                </div>
-                                            </div>
+                                            
                                             <div class="col-md-12 col-lg-3">
                                                 <div class="card">
                                                     <!-- <div class="card-header">
@@ -344,52 +307,7 @@ var option;
 
 option && myChart.setOption(option);
 </script>
-<script>
-var chartDom = document.getElementById('main1');
-var myChart = echarts.init(chartDom);
-var option;
 
-option = {
-    title: {
-    // text: '当前目标完成情况'
-  },
-  tooltip: {
-    trigger: 'item'
-  },
-  legend: {
-    top: '5%',
-    left: 'center'
-  },
-  series: [
-    {
-      name: 'Access From',
-      type: 'pie',
-      radius: ['40%', '70%'],
-      avoidLabelOverlap: false,
-      label: {
-        show: false,
-        position: 'center'
-      },
-      emphasis: {
-        label: {
-          show: true,
-          fontSize: '40',
-          fontWeight: 'bold'
-        }
-      },
-      labelLine: {
-        show: false
-      },
-      data: [
-        { value: 7, name: '已完成数量' },
-        { value: 5, name: '未完成数量' }
-      ]
-    }
-  ]
-};
-
-option && myChart.setOption(option);
-</script>
 <script>
     var chartDom = document.getElementById('main2');
     var myChart = echarts.init(chartDom);
